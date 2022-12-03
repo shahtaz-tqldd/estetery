@@ -29,7 +29,7 @@ const PropertyCard = ({ property }) => {
         </div>
         <p>{address}</p>
         <div className="divider -my-2"></div>
-        <div className="flex justify-between">
+        <div className="flex justify-between text-xs">
           <div className="flex items-center">
             <FaBed className="text-primary" /> &nbsp;
             {bedrooms} Beds
