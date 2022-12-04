@@ -8,8 +8,6 @@ const SearchItems = ({ properties, gotPlace, setGotPlace, setFilter }) => {
   const [location, setLocation] = useState([])
   const [search, setSearch] = useState(false)
   const [searchPress, setSearchPress] = useState(false)
-
-
   let allLocation = []
   properties.map(p => !allLocation.includes(p.location) && allLocation.push(p.location))
   const handleSearch = (e) => {
@@ -88,9 +86,7 @@ const SearchItems = ({ properties, gotPlace, setGotPlace, setFilter }) => {
             <p className="text-neutral">Price</p>
             <div className="flex flex-row items-center justify-between">
               <select name="range" className="select select-sm font-bold text-lg focus:outline-none pl-0">
-                {/* <option disabled>Select a range</option> */}
                 <option>$0 - $2500</option>
-                <option>$200 - $500</option>
                 <option>$500 - $1000</option>
                 <option>$1000 - $1500</option>
                 <option>$1500 - $2500</option>
@@ -102,7 +98,6 @@ const SearchItems = ({ properties, gotPlace, setGotPlace, setFilter }) => {
             <p className="text-neutral">Property Type</p>
             <div className="w-sm">
               <select name="type" className="select select-sm font-bold text-lg focus:outline-none pl-0">
-                {/* <option disabled>Select a type</option> */}
                 <option>Houses</option>
                 <option>Apartment</option>
                 <option>Duplex</option>
@@ -110,10 +105,9 @@ const SearchItems = ({ properties, gotPlace, setGotPlace, setFilter }) => {
             </div>
           </div>
           <div className="divider lg:divider-horizontal"></div>
-          <button className="btn btn-primary">Search</button>
+          <button className="btn btn-primary px-12">Search</button>
         </div>
       </form>
-
       <DateModal selectedDate={selectedDate} setSelectedDate={setSelectedDate} />
     </div>
   );

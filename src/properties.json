@@ -1,18 +1,4 @@
-import React, { useState } from "react";
-import SearchItems from "./components/SearchItems";
-import Properties from "./properties/Properties";
-
-const Homepage = () => {
-  const rev = {range:'$0 - $2500', type: 'all'}
-  const [gotPlace, setGotPlace] = useState(null)
-  const [filter, setFilter] = useState(rev)
-  const rangeMin = parseInt(filter?.range.split(" - ")[0].split('$')[1])
-  const rangeMax = parseInt(filter?.range.split(" - ")[1].split('$')[1])
-  const type = filter?.type
-  const value = { rangeMin, rangeMax, type }
-
-  console.log(value)
-  const properties = [
+[
     {
       "id": 1,
       "title": "Palm Harbor",
@@ -158,21 +144,3 @@ const Homepage = () => {
       "type": "Duplex"
     }
   ]
-  return (
-    <div>
-      <SearchItems
-        properties={properties}
-        gotPlace={gotPlace}
-        setGotPlace={setGotPlace}
-        filter={filter}
-        setFilter={setFilter}
-      />
-      <Properties properties={properties}
-        gotPlace={gotPlace}
-        value={value}
-      />
-    </div>
-  );
-};
-
-export default Homepage;
