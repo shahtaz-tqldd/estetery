@@ -1,5 +1,5 @@
 # Project Name: Estetery
-## Live Link: https://estetery.netlify.app/
+## Live Link: https://estetery-search.netlify.app/
 
 ## About this project
 In this website 4 layers of search filter is applied and sorted the data according to the filter. The frontend part of the website is 
