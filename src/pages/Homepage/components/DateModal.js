@@ -3,10 +3,10 @@ import { format } from "date-fns";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/dist/style.css";
 
-const DateModal = ({ selected, setSelected }) => {
+const DateModal = ({ selectedDate, setSelectedDate }) => {
   let footer = <p>Please pick a day.</p>;
-  if (selected) {
-    footer = <p className="text-center mt-3">You picked {format(selected, "PP")}.</p>;
+  if (selectedDate) {
+    footer = <p className="text-center mt-3">You picked {format(selectedDate, "PP")}.</p>;
   }
   return (
     <div>
@@ -17,8 +17,8 @@ const DateModal = ({ selected, setSelected }) => {
           <div className="flex justify-center items-center">
           <DayPicker
             mode="single"
-            selected={selected}
-            onSelect={setSelected}
+            selectedDate={selectedDate}
+            onSelect={setSelectedDate}
             footer={footer}
             // onClick={()=><label htmlFor="date-modal"></label>}
           />
