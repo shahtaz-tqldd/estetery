@@ -20,7 +20,7 @@ const PropertyCard = ({ property }) => {
   return (
     <div className="card bg-base-100 shadow-xl rounded-xl">
       <figure className="h-56">
-        <img src={img} alt={address} className="min-h-full w-full"/>
+        <img src={img} alt={address} className="min-h-full w-full" />
       </figure>
       <div className="card-body">
         <div className="flex justify-between">

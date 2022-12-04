@@ -6,6 +6,8 @@ function App() {
   return (
     <div className='bg-[#eee]'>
       <RouterProvider router={routes}></RouterProvider>
+      
+      {/* react hot toaster */}
       <Toaster />
     </div>
   );

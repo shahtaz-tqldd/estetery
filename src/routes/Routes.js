@@ -10,7 +10,8 @@ export const routes = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Homepage/>
+                element: <Homepage />,
+                loader: ()=> fetch('https://estatery-backend.vercel.app/properties')
             },
             {
                 path: '*',

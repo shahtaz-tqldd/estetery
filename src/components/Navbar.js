@@ -19,7 +19,7 @@ const Navbar = () => {
         <li><Link to='/'>Resources</Link></li>
     </>
     return (
-        <div className='bg-base-100'>
+        <div className='bg-base-100 sticky top-0 z-10 shadow-lg'>
             <div className="navbar max-w-[1280px] mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">

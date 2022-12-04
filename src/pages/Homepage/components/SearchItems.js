@@ -98,6 +98,7 @@ const SearchItems = ({ properties, gotPlace, setGotPlace, setFilter }) => {
             <p className="text-neutral">Property Type</p>
             <div className="w-sm">
               <select name="type" className="select select-sm font-bold text-lg focus:outline-none pl-0">
+                <option>All</option>
                 <option>Houses</option>
                 <option>Apartment</option>
                 <option>Duplex</option>
